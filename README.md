@@ -39,7 +39,7 @@ Test:
 ```swift
 final class LoginUITests: UITestCase {
     func testSomething() {
-        start(using: Configuration())
+        try start(with: Configuration())
         .loginStep.someAction()
         .loginStep.loginPageIsVisible()
     }
